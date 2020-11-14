@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+ 
+
+</head>
+
+<body style="background-color: blanchedalmond;">
+  <h1 style="text-align: center; text-transform: uppercase;"><%= title %></h1>
+ 
+  <table class="table" border="1" style="margin: 0 auto; font-weight: bold;">
+    <thead>
+
+      <tr>
+        <th>NAME</th>
+        <th>CTYPE</th>
+        <th>VIDEOS</th>
+        <th>AUTHOR</th>
+        <th>ACTIVE</th>
+        <th>DATE</th>
+      </tr>
+    </thead>
+    <% records.forEach(function(row){%>
+    <tr>
+      <td ><%=row.name  %></td>
+      <td ><%=row.ctype  %></td>
+      <td ><%=row.videos  %></td>
+      <td ><%=row.author  %></td>
+      <td ><%=row.active  %></td>
+      <td ><%=row.date  %></td>
+    </tr>
+    <% }) %>
+  </table>
+
+</body>
+
+</html>
